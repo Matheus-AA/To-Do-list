@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --back-color: #99caff;
+  --back-color-darker: #5087c2;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color:var(--back-color);
+  background-image:
+  radial-gradient(at 80% 54%, hsla(275,65%,58%,1) 0px, transparent 50%),
+  radial-gradient(at 46% 15%, hsla(177,82%,64%,1) 0px, transparent 50%),
+  radial-gradient(at 9% 67%, hsla(252,93%,70%,1) 0px, transparent 50%),
+  radial-gradient(at 50% 34%, hsla(285,100%,50%,1) 0px, transparent 50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.tarefas li{
+  margin: 20px auto;
+  word-wrap: break-word;
+}
+
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-tarefa{
+  font-size: 24px;
+  height: 60px;
+  width: 300px;
+  padding: 0 20px;
+}
+
+.input-tarefa:focus{
+  outline: 2px solid var(--back-color);
+}
+
+.btn-tarefa, .apagar {
+  border: none;
+  border-radius: 15px;
+  background: var(--back-color);
+  color: rgb(63, 58, 58);
+  font-size: .7em;
+  font-weight: bold;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.btn-tarefa:hover {
+  color: #fff;
+  background: var(--back-color-darker);
+}
+
+.apagar{
+  display: inline-block;
+}
+
+.apagar:hover{
+  color: #fff;
+  background: var(--back-color-darker);
+}
